@@ -15,7 +15,10 @@ class User {
 
   constructor() {
     if (!this.id) {
-      this.id === uuidV4();
+      this.id = uuidV4();
+    }
+
+    if (!this.admin) {
       this.admin = false;
     }
   }
